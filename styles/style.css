@@ -3,8 +3,119 @@ Colors to use:
 dark blue: #06365f
 light blue: #1c5380
 */
-
 body {
   font: 200 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.shade{
+  background: linear-gradient(#76baee,#06365f);
+}
+.background{
+  position:absolute;
+  width: 100vw;
+  height: 50vh;
+  z-index: -1;
+}
+.doubleContainer{
+  margin-top: 8%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+#phoneImage{
+  max-width: 100%;
+  height: auto;
+}
+.rightContainer{
+  width: 50%;
+  margin-left: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.topSection{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.textSection{
+  background-color: white;
+  margin-top: 10%;
+  padding: 0% 5%;
+  border-radius: 5px;
+  width: 90%;
+}
+
+#loginButton{
+  display: flex;
+  flex-direction: row;
+  width: 15%;
+  height: 3rem;
+  align-items: center;
+  justify-content: center;
+  background-color: #1c5380;
+  border-radius: 5px;
+}
+
+#loginButton img{
+  height: 50%;
+}
+
+#loginButton button{
+  background-color: transparent;
+  color: white;
+  border: none;
+}
+
+.buttonDiv{
+  display:flex;
+  flex-direction: row;
+  width: 100%;
+  height: 60px;
+}
+
+.buttonDiv button{
+  background-repeat: no-repeat;
+  background-size:cover;
+  height: 55px;
+  border: none;
+  margin: 1%
+
+}
+
+#iosButton{
+  background-image: url(../images/badge-iphone.png);
+  width: 171px;
+  /* I need help on resizing the button without hardcodding the height and width! */
+  /* the background image also does not fit perfectly */
+}
+
+#androidButton{
+  background-image: url(../images/badge-android.png);
+  width: 163px;
+}
+
+footer{
+  margin-top: 2%;
+  width: 60%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+footer a{
+  text-decoration: none;
+  color:#06365f;
+  text-transform: uppercase;
+}
+
+footer a:last-of-type{
+  color: grey;
 }
